@@ -36,8 +36,20 @@ models:
     # Applies to all files under models/example/
     marts:
       +materialized: table
+      +database: practice-project-377112
+      +schema: marts
     staging:
       jaffle_shop:
+        +database: practice-project-377112
+        +schema: jaffle_shop
         +materialized: view
       stripe:
+        +database: practice-project-377112
+        +schema: stripe
         +materialized: view
+    team_one:
+      +database: practice-project-377112
+      +schema: team_one
+    team_two:
+      +database: practice-project-377112
+      +schema: team_two
